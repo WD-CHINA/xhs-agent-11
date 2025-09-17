@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zxx">
+  <script src="https://hm.baidu.com/hm.js?014348b646c901593d9cf1525e154dd5"></script>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="max-age=604800"> <!-- for baidu -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="static/css/magnific-popup.min.css">
+  <link rel="stylesheet" href="static/css/animate.min.css">
+  <link rel="stylesheet" href="static/css/boxicons.min.css">
+  <link rel="stylesheet" href="static/css/flaticon.css">
+  <link rel="stylesheet" href="static/css/meanmenu.min.css">
+  <link rel="stylesheet" href="static/css/news.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+
+  <title>新闻中心</title>
+  <!-- <meta name="description" content="融梦科技提供智慧体育、智慧体测和智能体育解决方案，帮助学校和体育机构实现数据智能化，提升教学和科研效率。">
+	<meta name="keywords" content="融梦科技,智慧体育,智慧体测,中考体育,体育,AI体育,智能体育,智慧操场,智慧校园,体能测试"> -->
+
+  <meta property="og:title" content="融梦科技">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://http://www.dream-sports.cn/">
+  <meta property="og:site_name" content="dream-sports">
+  <!-- start of customer header -->
+  <!-- end of customer header -->
+
+</head>
+
+<body>
+  <style>
+    .img-fluid {
+      margin: 0 auto;
+      height: 240px !important;
+      object-fit: cover;
+    }
+
+    .media>a {
+      width: 100%;
+      text-align: center;
+    }
+
+    .media>a>img {
+      width: 100%;
+    }
+  </style>
+
+  <div class="preloader">
+    <div class="preloader-wave"></div>
+  </div>
+
+  <div class="header-page"></div>
+
+
+  <div class="inner-banner inner-bg4">
+    <div class="container">
+      <div class="inner-title text-center">
+      </div>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="content-wrap">
+      <div class="container">
+        <div class="row" id="news-container"></div>
+        <script>
+          let articleList = [
+            {
+              "title": "公开课｜聚焦智慧体育 打造数字课堂",
+              "link": "https://mp.weixin.qq.com/s/c1T352IpMfGju_Ff7NeKHg",
+              "image_url": "statics/image/kdsl.jpeg",
+              "meta_date": "2023-10-31 17:29",
+              "description": "2023年10月26日上午，以“聚焦智慧体育 打造数字课堂”为主题的小学体育教研展示活动在长宁路小学举行。"
+            },
+            {
+              "title": "赋能体育“动”见未来，荆州市样板校落地启动",
+              "link": "https://mp.weixin.qq.com/s/YfIzNuwkhax1UcDF92DZOw",
+              "image_url": "statics/image/640.png",
+              "meta_date": "2023-03-17 16:19",
+              "description": "2023年3月2日下午，由荆州市文化和旅游局、荆州市教育局主办，沙市区教育局承办的智慧体育进校园启动仪式在沙市区红门路学校举行。"
+            },
+            {
+              "title": "AI体育公开教学展示在上海平三小学顺利开展",
+              "link": "https://mp.weixin.qq.com/s/2j9cul9kjzf2fm7rCtNxSg",
+              "image_url": "statics/image/640 (1).png",
+              "meta_date": "2023-03-16 18:27",
+              "description": "3月15日，平三小学组织了以“新课标”理念为指导，AI体育智慧屏为载体的公开教学展示。"
+            },
+            {
+              "title": "“体育＋”融合！融梦科技亮相云南省体育产业大会",
+              "link": "https://mp.weixin.qq.com/s/R-NN6OKNiFZRwlbub28OYA",
+              "image_url": "statics/image/640.jpeg",
+              "meta_date": "2023-02-24 22:04",
+              "description": "2023年2月22日，云南省体育产业大会在云南海埂会堂开幕。"
+            },
+            {
+              "title": "媒体报道｜AI助力，共建校园体育与健康数字化平台",
+              "link": "https://mp.weixin.qq.com/s/4OW8fTsMjsyxczU5z7KH2Q",
+              "image_url": "statics/image/6401.png",
+              "meta_date": "2023-02-20 19:04",
+              "description": "上海市闸北第八中学引入了“智慧体育校园方案”系列产品，包括智慧体测屏、智慧体锻屏和云课堂小程序，搭建了一套体育与健康数字化平台，也为学生建立起完整的数字化运动档案。"
+            },
+            {
+              "title": "媒体报道 ｜智慧体育考场亮相常德",
+              "link": "https://mp.weixin.qq.com/s/1-QEcRhByAanA_02Hse-AQ",
+              "image_url": "statics/image/640 (2).png",
+              "meta_date": "2022-12-21 15:00",
+              "description": "日前，融梦科技携“AI体育智慧考场”正式亮相全国中考体育百分城市之一常德市"
+            },
+            {
+              "title": "媒体报道 ｜AI加持 大课间掀起跳绳热",
+              "link": "https://mp.weixin.qq.com/s/iVIdP7aAblx4pi5spLUNiw",
+              "image_url": "statics/image/640 (3).png",
+              "meta_date": "2022-12-20 16:16",
+              "description": "为了调整好学生们的身心状态,督促学生养成习惯,每天锻炼一小时,近期南昌城北学校布置了一块AI智慧跳绳区"
+            },
+            {
+              "title": "黄浦区区委书记杲云一行考察大同初中智慧体育建设",
+              "link": "https://mp.weixin.qq.com/s/XhGMZ_bny6__p-1mSBW-iw",
+              "image_url": "statics/image/640 (4).jpeg",
+              "meta_date": "2022-12-08 18:00",
+              "description": "黄浦区区委书记杲云来到上海市大同初级中学参观考察，副区长袁园、区教育党工委书记陈亮"
+            },
+            {
+              "title": "校园活动｜AI助力金陵中学“星体测”再起航",
+              "link": "https://mp.weixin.qq.com/s/bWftZnEfwv3F6MAwZhZRTw",
+              "image_url": "statics/image/640 (1).jpeg",
+              "meta_date": "2022-11-16 09:48",
+              "description": "一年一度的“FUN开玩”金陵中学运动嘉年华——2022金陵中学“星体测”竞赛如约而至，同学们在丰富多彩的活动中挥洒青春的汗水，感受运动的魅力。"
+            },
+            
+          ]
+          articleList.map(item => {
+            let divSFYX = window.document.createElement("div")
+            divSFYX.className = 'col-12 col-sm-6 col-md-6 col-lg-4 mb-2'
+            divSFYX.title = item.title
+            let node = `
+      <div class="rs-news-1 no-shadow h-100">
+              <div class="media">
+                <a href="${item.link}" target="_blank">
+                  <img src="${item.image_url}" class="img-fluid">
+                </a>
+              </div>
+              <div class="body">
+                <div class="title"><a href="${item.link}"
+                    target="_blank">${item.title}</a>
+                </div>
+                <div class="meta-date">${item.meta_date}</div>
+                <p>${item.title}</p>
+              </div>
+            </div>`
+            divSFYX.innerHTML += node
+            document.querySelector("#news-container").appendChild(divSFYX)})
+        </script>
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                <!--<li class="page-item"><a class="page-link" href="/news.html">
+                    << </a>
+                </li>-->
+                <li class="page-item active"><a class="page-link" onclick="pageClick('1')" href="news.html">1</a></li>
+                <li class="page-item"><a class="page-link" onclick="pageClick('2')" href="news-2.html">2</a></li>
+                <li class="page-item"><a class="page-link" onclick="pageClick('next')" href="news-2.html">>></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-page"></div>
+
+  <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+  <script src="static/js/jquery-3.5.0.min.js"></script>
+
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="static/js/meanmenu.min.js"></script>
+
+  <script src="static/js/owl.carousel.min.js"></script>
+
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+  <script src="static/js/wow.min.js"></script>
+
+  <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+  <script src="static/js/form-validator.min.js"></script>
+
+  <script src="static/js/contact-form-script.js"></script>
+
+  <script src="static/js/custom.js"></script>
+  <script>
+               $('.header-page').load('header.html');
+               $('.footer-page').load('footer.html');
+  </script>
+  <script>
+
+
+  </script>
+</body>
+<style>
+  .mobile-nav .mean-bar .meanmenu-reveal {
+    padding-top: 13px !important;
+  }
+
+  .mobile-nav .mean-bar .meanmenu-reveal.meanclose {
+    padding-top: 15px !important;
+  }
+</style>
+
+</html>

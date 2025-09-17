@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="max-age=604800"> <!-- for baidu -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="static/css/magnific-popup.min.css">
+
+  <link rel="stylesheet" href="static/css/animate.min.css">
+
+  <link rel="stylesheet" href="static/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="static/css/flaticon.css">
+
+  <link rel="stylesheet" href="static/css/meanmenu.min.css">
+
+  <link rel="stylesheet" href="static/css/style.css">
+
+  <link rel="stylesheet" href="static/css/responsive.css">
+
+  <title>用户案例</title>
+
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="preloader-wave"></div>
+  </div>
+
+
+  <div class="header-page"></div>
+
+
+  <div class="inner-banner inner-bg5">
+    <div class="container">
+      <div class="inner-title text-center">
+        <!-- <h3>Blog Details</h3>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <i class='bx bxs-chevrons-right'></i>
+          </li>
+          <li>Blog Details</li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-dtls ptb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="blog-dtls-content">
+            <div class="blog-dtls-img">
+              <img src="static/picture/blog-dtls.jpg" alt="Blog Images">
+            </div>
+            <div class="blog-text">
+              <h2></h2>
+            </div>
+            <div class="post-navigation" style="visibility: hidden;">
+              <div class="navigation-links">
+                <div class="nav-previous">
+                  <a>上一篇</a>
+                </div>
+                <div class="nav-next">
+                  <a>下一篇</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<div class="footer-page"></div>
+
+
+  <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+  <script src="static/js/jquery-3.5.0.min.js"></script>
+  <script src="static/js/static.js"></script>
+	<script>
+    $('.header-page').load('header.html');
+    $('.footer-page').load('footer.html');
+  </script>
+  <script>
+    function getUrlParameter(name) {
+      name = name.replace(/[]/, "\[").replace(/[]/, "\[").replace(/[]/, "\\\]");
+      var regexS = "[\\?&]" + name + "=([^&#]*)";
+      var regex = new RegExp(regexS);
+      var results = regex.exec(window.parent.location.href);
+      if (results == null)
+        return "";
+      else {
+        return results[1];
+      }
+    };
+    let urlId = Number(getUrlParameter('id'));
+    if(urlId){
+      $('.post-navigation').css('visibility','visible')
+      if(urlId == 1){
+        $('.nav-previous').css('visibility','hidden')
+        $('.nav-next').css('visibility','visible')
+      }else if(urlId == 6){
+        $('.nav-previous').css('visibility','visible')
+        $('.nav-next').css('visibility','hidden')
+      }else{
+        $('.nav-previous').css('visibility','visible')
+        $('.nav-next').css('visibility','visible')
+      }
+      
+      $('.nav-previous a').click(()=>{
+        window.location.href = `case-details.html?id=${urlId-1}`;
+      })
+      $('.nav-next a').click(()=>{
+        window.location.href = `case-details.html?id=${urlId+1}`;
+      })
+      $('.blog-dtls-img img').attr('src',blogContent[urlId-1].img)
+      $('.blog-text h2').html(blogContent[urlId-1].title)
+      $('.blog-text').append(blogContent[urlId-1].content)
+    }
+  </script>
+
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="static/js/meanmenu.min.js"></script>
+
+  <script src="static/js/owl.carousel.min.js"></script>
+
+  <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+  <script src="static/js/wow.min.js"></script>
+
+  <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+  <script src="static/js/form-validator.min.js"></script>
+
+  <script src="static/js/contact-form-script.js"></script>
+
+  <script src="static/js/custom.js"></script>
+</body>
+
+</html>

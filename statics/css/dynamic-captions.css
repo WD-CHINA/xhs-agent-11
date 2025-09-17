@@ -1,0 +1,37 @@
+.tp-caption.black {
+color:#000;
+text-shadow:none;
+}
+
+.tp-caption.small_thin_grey {
+font-size:18px;
+line-height:26px;
+font-weight:300;
+font-family:"Open Sans";
+color:rgb(117, 117, 117);
+text-decoration:none;
+background-color:transparent;
+padding:1px 4px 0px;
+text-shadow:none;
+margin:0px;
+border-width:0px;
+border-color:rgb(255, 214, 88);
+border-style:none;
+}
+
+.tp-caption.modern_big_bluebg {
+position:absolute;
+color:#fff;
+text-shadow:none;
+font-weight:800;
+font-size:30px;
+line-height:36px;
+font-family:"Open Sans", sans-serif;
+padding:3px 10px;
+margin:0px;
+border-width:0px;
+border-style:none;
+background-color:#4e5b6c;
+letter-spacing:0;
+}
+

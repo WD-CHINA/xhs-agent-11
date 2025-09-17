@@ -1,0 +1,223 @@
+<style>
+	.mobile-nav .mean-bar .meanmenu-reveal {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 15px;
+	}
+
+	.mobile-nav .mean-bar .meanmenu-reveal span:nth-child(2) {
+		margin-top: 4px;
+	}
+
+	.mobile-nav .mean-bar .meanmenu-reveal span:nth-child(3) {
+		margin-top: 4px;
+	}
+
+	@media screen and (max-width:991.98px) {
+		.navbar-area .mobile-nav .mean-bar .mean-nav .menu-btn {
+			display: none;
+		}
+	}
+</style>
+
+<body>
+	<script type='text/javascript'>
+		(function (m, ei, q, i, a, j, s) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			j = ei.createElement(q),
+				s = ei.getElementsByTagName(q)[0];
+			j.async = true;
+			j.charset = 'UTF-8';
+			j.src = 'https://static.meiqia.com/dist/meiqia.js';
+			s.parentNode.insertBefore(j, s);
+		})(window, document, 'script', '_MEIQIA');
+		_MEIQIA('entId', '652081228caa369a5c887e8f7bf1ae07');
+		_MEIQIA('init');
+	</script>
+	<div class="navbar-area">
+
+		<div class="mobile-nav">
+			<a href="index.html" class="logo">
+				<img src="static/picture/sticky-logo.webp" alt="Logo">
+			</a>
+			<a style="display: block;position: absolute;z-index: 1000;top: 10px;display: block;background-color: rgb(31, 140, 235);padding: 5px 20px;color: #fff;border-radius: 50px;text-align: center;overflow: hidden;right:60px"
+				href="tel:+8618616859734" class="seo-btn">186-1685-9734</a>
+		</div>
+
+		<div class="main-nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light ">
+					<a class="navbar-brand" href="">
+						<img src="static/picture/sticky-logo.webp" style="width: 150px;" alt="Logo">
+					</a>
+					<a class="navbar-brand-sticky" href="">
+						<img src="static/picture/footer-logo.jpg" style="width: 150px;" alt="Logo">
+					</a>
+					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item">
+								<a href="index.html" id="homePage" class="nav-link ">
+									首页
+								</a>
+							</li>
+							<li class="nav-item">
+								<a id="productionPage" class="nav-link">
+									产品中心
+									<i class='bx bxs-chevron-right'></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="exercise.html" id="exercise" class="nav-link">
+											AI体育锻炼屏
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="test.html" id="test" class="nav-link">
+											AI体育教学测试屏
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="mohe.html" id="mohe" class="nav-link">
+											AI跳绳魔盒
+										</a>
+									</li>
+
+									<li class="nav-item">
+										<a href="exam.html" id="exam" class="nav-link">
+											AI体育测试小站
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="mp.html" id="mp" class="nav-link">
+											校园云体锻
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="analysis.html" id="analysis" class="nav-link">
+											智慧体育数据平台
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" id="aboutUs" class="nav-link">
+									关于我们
+									<i class='bx bxs-chevron-right'></i>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item">
+										<a href="about.html" id="about" class="nav-link">
+											公司简介
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="job.html" id="job" class="nav-link">
+											加入我们
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="casePage.html" id="casePage" class="nav-link">
+									用户案例
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="news.html" id="news" class="nav-link">
+									新闻中心
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="partner.html" id="partner" class="nav-link">
+									联系我们
+								</a>
+							</li>
+						</ul>
+						<div class="menu-btn">
+							<a style="display: block" href="tel:+8618616859734" class="seo-btn">186-1685-9734</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="heightBox"></div>
+	<style>
+		.heightBox {
+			width: 100%;
+			height: 91px;
+		}
+
+		@media screen and (max-width: 991px) {
+			.heightBox {
+				height: 55px;
+			}
+		}
+	</style>
+</body>
+<script src="static/js/owl.carousel.min.js"></script>
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+<script src="static/js/form-validator.min.js"></script>
+<script src="static/js/wow.min.js"></script>
+<script src="static/js/jquery.ajaxchimp.min.js"></script>
+<script src="static/js/meanmenu.min.js"></script>
+<script src="static/js/custom.js"></script>
+
+<script>
+	let path = window.location.pathname;
+	let pathName = path.slice(1, path.length - 5)
+	// console.log(pathName)
+	switch (pathName) {
+		case 'index':
+			jQuery('#homePage').attr('class', 'active');
+			break;
+		case 'exercise':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#exercise').attr('class', 'active');
+			break;
+		case 'test':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#test').attr('class', 'active');
+			break;
+		case 'mohe':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#mohe').attr('class', 'active');
+			break;
+		case 'exam':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#exam').attr('class', 'active');
+			break;
+		case 'mp':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#mp').attr('class', 'active');
+			break;
+		case 'analysis':
+			jQuery('#productionPage').attr('class', 'active');
+			jQuery('#analysis').attr('class', 'active');
+			break;
+		case 'about':
+			jQuery('#aboutUs').attr('class', 'active');
+			jQuery('#about').attr('class', 'active');
+			break;
+		case 'job':
+			jQuery('#aboutUs').attr('class', 'active');
+			jQuery('#job').attr('class', 'active');
+			break;
+		case 'casePage':
+		case 'case-details':
+			jQuery('#casePage').attr('class', 'active');
+			break;
+		case 'partner':
+			jQuery('#partner').attr('class', 'active');
+			break;
+		case 'news':
+			jQuery('#news').attr('class', 'active');
+			break;
+
+		default:
+			break;
+	}
+</script>
